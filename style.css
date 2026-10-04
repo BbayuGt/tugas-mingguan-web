@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+body {
+	font-family: "Darumadrop One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+main {
+	padding: 10px;
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#main-content {
+	display: flex;
+	justify-content: center;
+
+	opacity: 0;
+	transform: translateY(20px);
+
+	animation: slideUp 1s ease-out 0.2s forwards
+}
+
+#control {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: translateY(20px);
+	animation: slideUp 1s ease-out 1.2s forwards;
+	position: relative;
+	margin-top: auto;
+	margin-bottom: 10dvh;
+}
+
+@keyframes slideUp {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media screen and (max-width: 732px) {
+	header {
+		justify-content: left;
+	}
+}
+
+footer {
+	display: flex;
+	padding: 10px;
+	background-color: blue;
+}
+
+footer a{
+	color: white;
+}
