@@ -4,6 +4,7 @@
 	<head>
 		<title>The Shore</title>
 		<link href="style.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	</head>
 	<body>
 		<header>
@@ -16,6 +17,11 @@
 			<div id="control">
 				<p>Tap the screen to view.</p>
 				<a id="write" href="#">Write your own message.</a>
+			</div>
+
+			<div id="write" class="flex flex-col">
+				<textarea name="Message" id="msg" cols="30" rows="5"></textarea>
+				<input type="button" value="Submit" class="btn bg-blue-100 rounded shadow hover:bg-blue-200">
 			</div>
 		</main>
 		<footer>

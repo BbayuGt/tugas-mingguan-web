@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<title>Admin Dashboard</title>
+</head>
+<body>
+	<nav class="bg-indigo-950 px-4">
+		<div>
+			<h1 class="text-white text-lg font-bold">The shore's Administrator</h1>
+		</div>
+	</nav>
+
+	<main class="flex justify-center m-4">
+		<table class="table rounded px-2">
+			<tr class="table-row table-header-group">
+				<th class="table-cell px-2">No</th>
+				<th class="table-cell	px-2">Source</th>
+				<th class="table-cell px-2">Message</th>
+				<th class="table-cell px-2">State</th>
+				<th class="table-cell px-2">Actions</th>
+			</tr>
+			<tr>
+				<td class="px-2">1</td>
+				<td class="px-2">192.168.1.1</td>
+				<td class="px-2 text-wrap">Halo</td>
+				<td class="px-2">Waiting for approval</td>
+				<td class="p-2">
+					<button class="rounded-full bg-lime-200 hover:bg-lime-300 shadow p-2">Approve</button>
+					<button class="rounded-full bg-rose-200 hover:bg-rose-300 shadow p-2">Reject</button>
+				</td>
+			</tr>
+			<tr class="bg-rose-100">
+				<td class="px-2">2</td>
+				<td class="px-2">192.168.1.69</td>
+				<td class="px-2 text-wrap">Woi</td>
+				<td class="px-2">Rejected</td>
+				<td class="p-2">
+					<button class="rounded-full bg-lime-200 hover:bg-lime-300 shadow p-2">Approve</button>
+					<button class="rounded-full bg-rose-200 hover:bg-rose-300 shadow p-2">Reject</button>
+				</td>
+			</tr>
+			<tr class="bg-lime-100">
+				<td class="px-2">3</td>
+				<td class="px-2">192.168.1.67</td>
+				<td class="px-2 text-wrap">676767667</td>
+				<td class="px-2">Approved</td>
+				<td class="p-2">
+					<button class="rounded-full bg-lime-200 hover:bg-lime-300 shadow p-2">Approve</button>
+					<button class="rounded-full bg-rose-200 hover:bg-rose-300 shadow p-2">Reject</button>
+				</td>
+			</tr>
+			
+		</table>
+	</main>
+</body>
+</html>
